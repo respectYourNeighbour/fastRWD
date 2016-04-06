@@ -21,3 +21,5 @@ Ideally, we want to shorten our critical path so that it can be completed in the
 One approach to avoiding blocking requests is to request files in an asynchronous manner so that they load and execute on their own schedule, independent of page rendering. For JavaScript files, we can do this easily in modern browsers by adding an async attribute to a script element.
 
 But... async is only supported in the latest browsers (IE 10+), and, a script element offers us no means of qualifying whether a request should be made in the first place (we typically only load our DOM framework and other scripting enhancements in browsers that support certain features, after all). For these reasons, we typically add a small bit of JavaScript to request our files asynchronously: we maintain loadJS for just this purpose.
+
+As for asynchonously requesting CSS files: HTML offers no native means of requesting a stylesheet asynchronously, so we need to use a bit of JavaScript to make an asynchronous stylesheet request as well. We maintain the loadCSS project for just this purpose.
