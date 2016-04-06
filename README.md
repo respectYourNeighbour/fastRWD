@@ -11,6 +11,6 @@ Webpagetest requests the site in a real browser and device, analyzes how it load
 
 Rendering a complex layout this quickly requires careful considerations
 ## Shortening the critical path
-“critical path” is used to describe the time between when a page is requested and rendered.
+“critical path” is used to describe the time between when a page is requested and rendered. The loading process is like a path between point A and point B that requires a number of steps to complete. Many of these steps are under our control.
 
-CSS and JavaScript requests can significantly increase the time it takes a page to render. That’s because by default, browsers will delay page rendering until they finish loading, parsing, and executing all of the CSS and JavaScript files referenced in the head of the page.
+For example, CSS and JavaScript requests can significantly increase the time it takes a page to render. That’s because by default, browsers will delay page rendering until they finish loading, parsing, and executing all of the CSS and JavaScript files referenced in the head of the page.
