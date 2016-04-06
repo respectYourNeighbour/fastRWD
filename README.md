@@ -23,3 +23,6 @@ One approach to avoiding blocking requests is to request files in an asynchronou
 But... async is only supported in the latest browsers (IE 10+), and, a script element offers us no means of qualifying whether a request should be made in the first place (we typically only load our DOM framework and other scripting enhancements in browsers that support certain features, after all). For these reasons, we typically add a small bit of JavaScript to request our files asynchronously: we maintain loadJS for just this purpose.
 
 As for asynchonously requesting CSS files: HTML offers no native means of requesting a stylesheet asynchronously, so we need to use a bit of JavaScript to make an asynchronous stylesheet request as well. We maintain the loadCSS project for just this purpose.
+
+## Inlining code
+Another way to avoid making blocking external requests is to include the contents of files you would have requested directly in the HTML document. This is known as inlining. CSS files can be inlined in an HTML document inside a style element, and JavaScript files can be inlined inside a script element.
