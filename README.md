@@ -14,3 +14,5 @@ Rendering a complex layout this quickly requires careful considerations
 “critical path” is used to describe the time between when a page is requested and rendered. The loading process is like a path between point A and point B that requires a number of steps to complete. Many of these steps are under our control.
 
 For example, CSS and JavaScript requests can significantly increase the time it takes a page to render. That’s because by default, browsers will delay page rendering until they finish loading, parsing, and executing all of the CSS and JavaScript files referenced in the head of the page.
+
+Ideally, we want to shorten our critical path so that it can be completed in the fewest, shortest steps possible and without any detours (read: external requests). Additionally, we may want to tell the browser that it can handle certain steps independently of rendering the page. We can instruct the browser to perform its page loading steps in one of two ways: either request files asynchronously so that they can load and execute while the page is being rendered, or include the code inline directly in our HTML page.
