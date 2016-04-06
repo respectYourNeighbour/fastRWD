@@ -8,3 +8,6 @@ A more useful benchmark for evaluating page speed from the user's perspective is
 To measure perceived performance, we need to find out how long it takes for a page to start rendering visually in the browser. Webpagetest.org is a fantastic tool you can use for this purpose.
 
 Webpagetest requests the site in a real browser and device, analyzes how it loads, and provides tons of information. Some portions of Webpagetest’s results are directly related to perceived performance, for example, “Start Render”.
+
+Rendering a complex layout this quickly requires careful considerations
+## Shortening the critical path
