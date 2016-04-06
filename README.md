@@ -5,4 +5,4 @@ When discussing how multi-device code correllates to page loading performance, o
 
 A more useful benchmark for evaluating page speed from the user's perspective is the time it takes for a page to become usable. This is “perceived performance” , because it refers to the performance metric that is most easily perceived by the naked eye, and likely to be most meaningful metric to our users.
 
-To measure perceived performance, we need to find out how long it takes for a page to start rendering visually in the browser. Webpagetest.org is a fantastic tool tool you can use for this purpose.
+To measure perceived performance, we need to find out how long it takes for a page to start rendering visually in the browser. Webpagetest.org is a fantastic tool you can use for this purpose.
