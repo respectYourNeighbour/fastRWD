@@ -26,3 +26,5 @@ As for asynchonously requesting CSS files: HTML offers no native means of reques
 
 ## Inlining code
 Another way to avoid making blocking external requests is to include the contents of files you would have requested directly in the HTML document. This is known as inlining. CSS files can be inlined in an HTML document inside a style element, and JavaScript files can be inlined inside a script element.
+
+Inlining is great in that it saves us from making slow, render-blocking requests, and it still allows us to execute code before the page is rendered (which is desirable in some cases). But inlining also has some downsides in that it prevents the browser from caching the code itself for reuse on subsequent pages, and it’s also very easy to overuse, as inline code still needs to be parsed before the page content can be rendered so you don’t want to include anything unnecessary. Basically, inlining is useful for critical portions of CSS and JS that need to be parsed before the page is rendered, but we want to use it sparingly.
