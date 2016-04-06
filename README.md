@@ -13,4 +13,4 @@ Rendering a complex layout this quickly requires careful considerations
 ## Shortening the critical path
 “critical path” is used to describe the time between when a page is requested and rendered.
 
-CSS and JavaScript requests can significantly increase the time it takes a page to render. 
+CSS and JavaScript requests can significantly increase the time it takes a page to render. That’s because by default, browsers will delay page rendering until they finish loading, parsing, and executing all of the CSS and JavaScript files referenced in the head of the page.
